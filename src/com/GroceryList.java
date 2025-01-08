@@ -3,18 +3,26 @@ package com;
 import java.util.ArrayList;
 
 public class GroceryList {
-
 	
-	public void groceryList() {
+	ArrayList<String> grocery=new ArrayList<String>();
+	
+	public void addgroceryList(String item) {
 		
-		ArrayList<String> list=new ArrayList<String>();
-		list.add("Sugar");
-		list.add("Teapowder");
-		list.add("Milk");
-		list.add("salt");
-				
-		list.remove(3);
+		grocery.add(item);
+			System.out.println(item);	
 		
-		System.out.println(list);
 	}
+	
+	 public void removeItemsGroceryList(String item) {
+
+	        System.out.println("***Remove operation performed***");
+	        grocery.remove(item);
+
+	    }
+	 
+	 public void viewList() {
+
+	        System.out.println("***list is as follows***");
+	        System.out.println(grocery);
+	    }
 }

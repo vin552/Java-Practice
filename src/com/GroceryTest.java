@@ -6,8 +6,13 @@ public class GroceryTest {
 		// TODO Auto-generated method stub
 
 		GroceryList list = new GroceryList();
-		list.groceryList();
+		list.addgroceryList("Tea");
+		list.addgroceryList("Milk");
+		list.addgroceryList("salt");
 		
+		list.removeItemsGroceryList("salt");
+		
+		list.viewList();
 		
 	}
 
